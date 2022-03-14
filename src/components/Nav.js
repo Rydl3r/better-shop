@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from '../assets/Logo.png'
 
 function Nav() {
@@ -8,7 +8,7 @@ function Nav() {
   return (
     <div>
       <nav className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl px-4 sm:px-6 lg:px-16">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
@@ -20,11 +20,11 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium" to="/">Home</Link>
-                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/catalog">Catalog</Link>
-                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/cart">Cart</Link>
+                  <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium" to="/">Home</Link>
+                  <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/catalog">Catalog</Link>
+                  <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/cart">Cart</Link>
 
-                  
+
                 </div>
               </div>
             </div>
