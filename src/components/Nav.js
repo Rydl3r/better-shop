@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
-import Logo from '../assets/Logo.png'
+import Logo from "../assets/Logo.png";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,19 +12,28 @@ function Nav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  className="h-8 w-8"
-                  src={Logo}
-                  alt="Workflow"
-                />
+                <img className="h-8 w-8" src={Logo} alt="Workflow" />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium" to="/">Home</Link>
-                  <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/catalog">Catalog</Link>
-                  <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/cart">Cart</Link>
-
-
+                  <Link
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    to="/catalog"
+                  >
+                    Catalog
+                  </Link>
+                  <Link
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    to="/cart"
+                  >
+                    Cart
+                  </Link>
                 </div>
               </div>
             </div>
@@ -87,9 +96,24 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link to="/" className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-                <Link to="/catalog" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Catalog</Link>
-                <Link to="/cart" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Cart</Link>
+                <Link
+                  to="/"
+                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/catalog"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Catalog
+                </Link>
+                <Link
+                  to="/cart"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Cart
+                </Link>
               </div>
             </div>
           )}
